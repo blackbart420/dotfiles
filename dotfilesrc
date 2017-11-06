@@ -4,3 +4,7 @@ ignore = [
     '.git',
     '.gitignore',
     '*.swp']
+packages = [
+    'config',
+    'mpd',
+    'ncmpcpp']
