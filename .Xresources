@@ -115,6 +115,7 @@ Xft.hintstyle:		  hintslight
 #define P_mars_red        #BC2731
 #define P_raspberry_wine  #B63753
 #define P_chinese_red     #BE132D
+#define P_american_beauty #A73340
 #define P_deep_claret     #973443
 
 

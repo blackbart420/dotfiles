@@ -80,7 +80,7 @@ prompt_end() {
 # Context: user@hostname (who am I and where am I)
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
-    echo -n " %{%K{yellow}%F{black}%}$SEGMENT_SEPARATOR"
+    #echo -n " %{%K{yellow}%F{black}%}$SEGMENT_SEPARATOR"
     prompt_segment yellow black "%(!.%{%F{yellow}%}.)$USER@%m"
   fi
 }
