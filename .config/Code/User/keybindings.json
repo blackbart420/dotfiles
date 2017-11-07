@@ -1,0 +1,11 @@
+// Placez vos combinaisons de touches dans ce fichier pour remplacer les valeurs par défaut
+[
+  {
+    "key": "ctrl+shift+h",
+    "command": "git.stageAll"
+  },
+  {
+    "key": "ctrl+shift+j",
+    "command": "git.push"
+  }
+]

@@ -1,0 +1,628 @@
+;=====================================================
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/jaagr/polybar
+;
+;   The README contains alot of information
+;
+;=====================================================
+
+; material icons
+;        
+
+[colors]
+;background = ${xrdb:color0:#222}
+;background = #222
+background-alt = #444
+;foreground = ${xrdb:color7:#222}
+;foreground = #dfdfdf
+foreground-alt = #555
+primary = #ffb52a
+alert = ${xrdb:red}
+
+active = ${xrdb:active}
+background = ${xrdb:background}
+foreground = ${xrdb:foreground}
+urgent = ${xrdb:red}
+secondary = ${xrdb:secondary}
+underline = ${xrdb:active}
+
+black = ${xrdb:black}
+gold = ${xrdb:gold}
+
+
+[bar/top]
+;monitor = ${env:MONITOR:HDMI-1}
+width = 100%
+height = 27
+;offset-x = 1%
+;offset-y = 1%
+radius = 6.0
+fixed-center = true
+
+;background = ${colors.black}
+background = transparent
+foreground = ${colors.gold}
+
+line-size = 3
+line-color = ${colors.black}
+
+border-size = 0
+border-color = ${colors.background}
+
+padding-left = 0
+padding-right = 0
+
+module-margin-left = 0
+module-margin-right = 0
+
+
+; Fonts are defined using <font-name>;<vertical-offset>
+; Font names are specified using a fontconfig pattern.
+;   font-0 = NotoSans-Regular:size=8;2
+;   font-1 = MaterialIcons:size=10
+;   font-2 = Termsynu:size=8;-1
+;   font-3 = FontAwesome:size=10
+; See the Fonts wiki page for more details
+font-0 = "PowerlineSymbols:size=20;5"
+font-1 = "System San Francisco Display:size=10;2"
+font-2 = "MaterialIcons:size=11;4"
+font-3 = "FontAwesome:size=11;2"
+font-4 = "Hack:size=11;2"
+
+
+modules-left = i3
+modules-center = arrowLeft3 mpd arrowRight3
+;modules-right = volume xkeyboard arrowLeft2 filesystem memory cpu temperature arrowLeft eth arrowLeft2 date arrowLeft powermenu arrowLeft2
+modules-right = arrowLeft5 volume arrowLeft2 date arrowLeft powermenu arrowLeft2
+
+tray-position = right 
+tray-padding = 2
+;tray-transparent = true
+tray-background = ${colors.gold}
+
+
+
+
+
+[bar/bottom]
+bottom = true
+width = 100%
+height = 27
+;offset-x = 1%
+;offset-y = 1%
+radius = 6.0
+fixed-center = true
+
+;background = ${colors.black}
+background = transparent
+foreground = ${colors.gold}
+
+line-size = 3
+line-color = ${colors.black}
+
+border-size = 0
+;border-color = ${colors.background}
+
+padding-left = 0
+padding-right = 0
+
+module-margin-left = 0
+module-margin-right = 0
+
+
+; Fonts are defined using <font-name>;<vertical-offset>
+; Font names are specified using a fontconfig pattern.
+;   font-0 = NotoSans-Regular:size=8;2
+;   font-1 = MaterialIcons:size=10
+;   font-2 = Termsynu:size=8;-1
+;   font-3 = FontAwesome:size=10
+; See the Fonts wiki page for more details
+font-0 = "PowerlineSymbols:size=19;4"
+font-1 = "System San Francisco Display:size=10;2"
+font-2 = "MaterialIcons:size=11;4"
+font-3 = "FontAwesome:size=11;2"
+
+
+modules-left = 
+modules-center = arrowLeft3 filesystem memory cpu temperature arrowLeft xkeyboard arrowRight eth arrowRight3
+modules-right = 
+
+tray-position =  
+tray-padding = 2
+;tray-transparent = true
+tray-background = ${colors.gold}
+
+
+
+
+
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:50:...%
+
+[module/xkeyboard]
+type = internal/xkeyboard
+
+; List of indicators to ignore
+blacklist-0 = caps lock
+;blacklist-1 = num lock
+;blacklist-2 = scroll lock
+
+
+; Available tags:
+;   <label-layout> (default)
+;   <label-indicator> (default)
+format = <label-layout><label-indicator>
+;format-spacing = 0
+
+;format-prefix = ""
+;format-prefix-foreground = ${colors.secondary}
+;format-prefix-underline = ${colors.secondary}
+
+; Available tokens:
+;   %layout%
+;   %name%
+;   %number%
+; Default: %layout%
+label-layout = 
+label-layout-padding = 2
+;label-layout-background = #bc99ed
+label-layout-foreground = ${colors.foreground}
+;label-layout-underline = ${colors.secondary}
+
+; Available tokens:
+;   %name%
+; Default: %name%
+label-indicator = ""
+label-indicator-padding = 2
+;label-indicator-margin = 1
+label-indicator-foreground = #BA6B57
+label-indicator-background = ${colors.black}
+
+
+
+[module/filesystem]
+type = internal/fs
+interval = 25
+mount-0 = /
+
+label-mounted = " %free% "
+label-mounted-background = ${colors.gold}
+label-mounted-foreground = ${colors.black}
+
+format-mounted = <label-mounted>
+format-mounted-prefix = " "
+format-mounted-prefix-foreground = ${colors.black}
+format-mounted-prefix-background = ${colors.gold}
+format-mounted-underline = ${colors.gold}
+
+label-unmounted = %mountpoint% not mounted
+;label-unmounted-foreground = ${colors.foreground}
+label-unmounted-foreground = ${colors.foreground}
+label-unmounted-background = #0a6cf5
+
+
+[module/bspwm]
+type = internal/bspwm
+
+label-focused = %index%
+label-focused-background = ${colors.background-alt}
+label-focused-underline= ${colors.primary}
+label-focused-padding = 2
+
+label-occupied = %index%
+label-occupied-padding = 2
+
+label-urgent = %index%!
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 2
+
+label-empty = %index%
+label-empty-foreground = ${colors.foreground-alt}
+label-empty-padding = 2
+
+[module/i3]
+type = internal/i3
+format = <label-state> <label-mode>
+index-sort = true
+wrapping-scroll = false
+
+; Only show workspaces on the same output as the bar
+;pin-workspaces = true
+
+label-mode-padding = 2
+label-mode-foreground = #000
+label-mode-background = ${colors.primary}
+
+; focused = Active workspace on focused monitor
+label-focused = %index% %icon%
+label-focused-background = ${colors.black}
+label-focused-underline = ${colors.gold}
+label-focused-padding = ${module/bspwm.label-focused-padding}
+
+; unfocused = Inactive workspace on any monitor
+label-unfocused = %index% %icon%
+label-unfocused-padding = ${module/bspwm.label-occupied-padding}
+
+; visible = Active workspace on unfocused monitor
+label-visible = %index% %icon%
+label-visible-background = ${self.label-focused-background}
+label-visible-underline = ${self.label-focused-underline}
+label-visible-padding = ${self.label-focused-padding}
+
+; urgent = Workspace with urgency hint set
+label-urgent = %index% %icon%
+label-urgent-background = ${module/bspwm.label-urgent-background}
+label-urgent-padding = ${module/bspwm.label-urgent-padding}
+
+
+label-focused-foreground = #BA6B57 
+label-visible-foreground = ${colors.active}
+label-unfocused-foreground = ${colors.secondary}
+label-unfocused-background = ${colors.black}
+label-urgent-foreground = ${colors.gold}
+
+ws-icon-0 = 1;
+ws-icon-1 = 2;
+ws-icon-2 = 3;
+ws-icon-4 = 4;
+ws-icon-3 = 5;
+ws-icon-5 = 6;
+ws-icon-6 = 7;
+ws-icon-7 = 8;
+ws-icon-8 = 9;
+ws-icon-9 = 10;
+#      
+
+
+[module/mpd]
+type = internal/mpd
+
+; Available tags:
+;   <label-song> (default)
+;   <label-time>
+;   <bar-progress>
+;   <toggle> - gets replaced with <icon-(pause|play)>
+;   <toggle-stop> - gets replaced with <icon-(stop|play)>
+;   <icon-random>
+;   <icon-repeat>
+;   <icon-repeatone>
+;   <icon-prev>
+;   <icon-stop>
+;   <icon-play>
+;   <icon-pause>
+;   <icon-next>
+;   <icon-seekb>
+;   <icon-seekf>
+format-online = <icon-prev> <icon-seekb> <icon-stop> <toggle> <icon-seekf> <icon-next>  <icon-repeat> <icon-random>   <label-song>   <bar-progress>  <label-time>
+;format-playing = ${self.format-online}
+;format-paused = ${self.format-online}
+;format-stopped = ${self.format-online}
+
+;format-online-underline = #4bffdc
+format-online-foreground = ${colors.black}
+format-online-background = ${colors.gold}
+
+; Available tokens:
+;   None
+label-offline = 🎜 mpd is offline
+
+
+icon-play = 
+icon-pause = 
+icon-stop = 
+icon-prev = " "
+icon-next = 
+icon-seekb = 
+icon-seekf = 
+icon-random = 
+icon-repeat = 
+icon-repeatone = 1
+
+label-song-maxlen = 100
+label-song-ellipsis = true
+label-song-foreground = #C2B59B 
+label-song-font = 5
+
+label-time-foreground = #46444C
+label-time-font = 5
+
+; Used to display the state of random/repeat/repeatone
+; Only applies if <icon-[random|repeat|repeatone]> is used
+toggle-on-foreground = ${colors.black}
+toggle-off-foreground = #46444C
+
+; Only applies if <bar-progress> is used
+bar-progress-width = 15
+bar-progress-indicator = 
+bar-progress-fill = ─
+bar-progress-empty = ─
+bar-progress-indicator-foreground = #46444C
+bar-progress-fill-foreground = #46444C
+bar-progress-empty-foreground = #46444C
+
+
+[module/xbacklight]
+type = internal/xbacklight
+
+;output = Default
+
+;format = <label> <ramp>
+format = <label>
+label = %percentage%
+
+ramp-0 = 🌕
+ramp-1 = 🌔
+ramp-2 = 🌓
+ramp-3 = 🌒
+ramp-4 = 🌑
+
+bar-width = 10
+bar-indicator = |
+bar-indicator-foreground = #ff
+bar-indicator-font = 2
+bar-fill = ─
+bar-fill-font = 2
+bar-fill-foreground = #9f78e1
+bar-empty = ─
+bar-empty-font = 2
+bar-empty-foreground = ${colors.foreground-alt}
+
+[module/backlight-acpi]
+inherit = module/xbacklight
+type = internal/backlight
+card = intel_backlight
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+
+format-prefix = "  "
+format-prefix-foreground = ${colors.black}
+format-underline = ${colors.gold}
+format-background = ${colors.gold}
+
+label = "%percentage%% "
+label-foreground = ${colors.black}
+
+
+[module/memory]
+type = internal/memory
+interval = 2
+
+format-prefix = " "
+format-prefix-foreground = ${colors.black}
+format-underline = ${colors.gold}
+format-background = ${colors.gold}
+
+label = %percentage_used%%
+label-foreground = ${colors.black}
+
+[module/wlan]
+type = internal/network
+interface = net1
+interval = 3.0
+
+format-connected = <ramp-signal> <label-connected>
+format-connected-underline = #9f78e1
+label-connected = %essid%
+
+format-disconnected =
+;format-disconnected = <label-disconnected>
+;format-disconnected-underline = ${self.format-connected-underline}
+;label-disconnected = %ifname% disconnected
+;label-disconnected-foreground = ${colors.foreground-alt}
+
+ramp-signal-0 = 
+ramp-signal-1 = 
+ramp-signal-2 = 
+ramp-signal-3 = 
+ramp-signal-4 = 
+ramp-signal-foreground = ${colors.foreground-alt}
+
+[module/eth]
+type = internal/network
+interface = enp2s0
+interval = 3.0
+
+; Available tokens:
+;   %ifname%    [wireless+wired]
+;   %local_ip%  [wireless+wired]
+;   %essid%     [wireless]
+;   %signal%    [wireless]
+;   %upspeed%   [wireless+wired]
+;   %downspeed% [wireless+wired]
+;   %linkspeed% [wired]
+; Default: %ifname% %local_ip%
+label-connected = "%local_ip%   %downspeed:7%  %upspeed:7% "
+label-connected-foreground = ${colors.black}
+label-connected-background = ${colors.gold}
+
+format-connected-underline = ${colors.gold}
+format-connected-prefix = "  "
+format-connected-prefix-foreground = ${colors.black}
+format-connected-prefix-background = ${colors.gold}
+
+
+
+format-disconnected =
+;format-disconnected = <label-disconnected>
+;format-disconnected-underline = ${self.format-connected-underline}
+;label-disconnected = %ifname% disconnected
+;label-disconnected-foreground = ${colors.foreground-alt}
+
+[module/date]
+type = internal/date
+interval = 5
+
+date = "%d %b "
+date-alt = " %d/%m/%Y"
+
+time = %H:%M
+time-alt = %H:%M:%S
+
+;format-prefix =
+;format-prefix-foreground = ${colors.foreground-alt}
+format-underline = ${colors.gold}
+format-background = ${colors.gold}
+format-foreground = ${colors.black}
+
+label = " %date%  %time% "
+
+
+[module/volume]
+type = internal/volume
+format-volume = " <ramp-volume> <label-volume> "
+format-volume-background = ${colors.black}
+label-volume-foreground = #BA6B57
+format-muted =  
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-3 = 
+ramp-volume-foreground = #BA6B57 
+bar-volume-width = 6
+bar-volume-indicator =
+bar-volume-fill = 
+bar-volume-fill-font = 3
+bar-volume-fill-foreground = ${colors.foreground}
+bar-volume-empty = 
+bar-volume-empty-font = 3
+bar-volume-empty-foreground = ${colors.secondary}
+
+
+
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = ADP1
+full-at = 98
+
+format-charging = <animation-charging> <label-charging>
+format-charging-underline = #ffb52a
+
+format-discharging = <ramp-capacity> <label-discharging>
+format-discharging-underline = ${self.format-charging-underline}
+
+format-full-prefix = " "
+format-full-prefix-foreground = ${colors.foreground-alt}
+format-full-underline = ${self.format-charging-underline}
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-foreground = ${colors.foreground-alt}
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-foreground = ${colors.foreground-alt}
+animation-charging-framerate = 750
+
+[module/temperature]
+type = internal/temperature
+thermal-zone = 0
+warn-temperature = 60
+
+format = <ramp><label>
+format-underline = ${colors.gold}
+format-warn = <ramp> <label-warn>
+format-warn-underline = ${self.format-underline}
+
+label = "%temperature%  "
+label-foreground = ${colors.black}
+label-background = ${colors.gold}
+label-warn = %temperature%
+label-warn-foreground = ${colors.urgent}
+
+ramp-0 = "  "
+ramp-1 = "  "
+ramp-2 = "  "
+ramp-foreground = ${colors.black}
+ramp-background = ${colors.gold}
+
+
+[module/powermenu]
+type = custom/menu
+label-active-font = 1
+format-spacing = 1
+format-background = ${colors.black}
+label-open = "   "
+label-open-foreground = #BA6B57 
+label-close = 
+label-close-foreground = ${colors.urgent}
+label-separator = |
+label-separator-foreground = ${colors.secondary}
+
+menu-0-0 = reboot
+menu-0-0-foreground = ${colors.foreground}
+menu-0-0-exec = reboot
+menu-0-1 = power off
+menu-0-1-foreground = ${colors.foreground}
+menu-0-1-exec = poweroff
+menu-0-2 = "logout  "
+menu-0-2-foreground = ${colors.foreground}
+menu-0-2-exec = i3-msg exit
+
+[module/arrowLeft]
+type = custom/text
+content = ""
+content-foreground = ${colors.black}
+content-background = ${colors.gold}
+
+[module/arrowLeft2]
+inherit = module/arrowLeft
+content-foreground = ${colors.gold}
+content-background = ${colors.black}
+
+[module/arrowLeft3]
+inherit = module/arrowLeft
+content-foreground = ${colors.gold}
+content-background = transparent
+
+[module/arrowLeft4]
+inherit = module/arrowLeft
+content-foreground = ${xrdb:color7}
+content-background = ${colors.gold}
+
+[module/arrowLeft5]
+inherit = module/arrowLeft
+content-foreground = ${colors.black}
+content-background = transparent
+
+
+[module/arrowRight]
+type = custom/text
+content = ""
+content-foreground = ${colors.black}
+content-background = ${colors.gold}
+
+[module/arrowRight2]
+inherit = module/arrowRight
+content-foreground = ${colors.gold}
+content-background = ${colors.black}
+
+[module/arrowRight3]
+inherit = module/arrowRight
+content-foreground = ${colors.gold}
+content-background = transparent
+
+[module/arrowRight4]
+inherit = module/arrowRight
+content-foreground = ${xrdb:color7}
+content-background = ${colors.gold}
+
+
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+
+[global/wm]
+margin-top = 50
+margin-bottom = 50
+
+

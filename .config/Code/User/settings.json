@@ -1,0 +1,29 @@
+{
+    "editor.renderControlCharacters": true,
+    "editor.fontFamily": "Hack, 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
+    "editor.fontSize": 13,
+    "editor.tabSize": 2,
+    "editor.renderWhitespace": "boundary",
+    "workbench.colorCustomizations":{
+        "tab.activeBackground": "#7D2027",
+        "activityBar.background": "#476A30",
+        "editorGroup.background": "#282c34",
+        "sideBar.background": "#282c34",
+        "statusBar.background": "#1e4477",
+        "editor.background": "#282c34"
+    },
+    "files.associations": {
+        "*.module": "php"
+    },
+    "workbench.colorTheme": "One Dark Pro",
+    "background.enabled": true,
+    "background.useDefault": false,
+    "background.customImages": [
+        "file:///home/nicolas/Images/Logos/ebiz-200.png",
+        "file:///home/nicolas/Images/Logos/bluedrop-200.png",
+        "file:///home/nicolas/Images/Logos/fcgb-small.png"
+    ],
+    "editor.minimap.enabled": true,
+    "git.confirmSync": false,
+    "window.zoomLevel": 0
+}

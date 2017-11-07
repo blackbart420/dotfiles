@@ -117,6 +117,7 @@ Xft.hintstyle:		  hintslight
 #define P_chinese_red     #BE132D
 #define P_american_beauty #A73340
 #define P_deep_claret     #973443
+#define_P_chili_pepper    #9B1B30
 
 
 #define P_copper         #C47E5A
