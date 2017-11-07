@@ -473,14 +473,16 @@ label = " %date%  %time% "
 
 [module/volume]
 type = internal/volume
-format-volume = " <ramp-volume> <label-volume> "
+format-volume = "<ramp-volume> <label-volume> "
 format-volume-background = ${colors.black}
 label-volume-foreground = #BA6B57
-format-muted =  
-ramp-volume-0 = 
-ramp-volume-1 = 
-ramp-volume-2 = 
-ramp-volume-3 = 
+format-muted = "    "
+format-muted-background = ${colors.black}
+format-muted-foreground = #BA6B57
+ramp-volume-0 = " "
+ramp-volume-1 = " "
+ramp-volume-2 = " "
+ramp-volume-3 = " "
 ramp-volume-foreground = #BA6B57 
 bar-volume-width = 6
 bar-volume-indicator =
@@ -527,14 +529,14 @@ warn-temperature = 60
 
 format = <ramp><label>
 format-underline = ${colors.gold}
-format-warn = <ramp> <label-warn>
-format-warn-underline = ${self.format-underline}
+format-warn = <ramp><label-warn>
 
 label = "%temperature%  "
 label-foreground = ${colors.black}
 label-background = ${colors.gold}
-label-warn = %temperature%
-label-warn-foreground = ${colors.urgent}
+label-warn = "%temperature%  "
+label-warn-foreground = ${xrdb:red}
+label-warn-background = ${colors.gold}
 
 ramp-0 = "  "
 ramp-1 = "  "
