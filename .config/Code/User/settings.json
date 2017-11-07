@@ -13,7 +13,8 @@
         "editor.background": "#282c34"
     },
     "files.associations": {
-        "*.module": "php"
+        "*.module": "php",
+        "*.inc": "php"
     },
     "workbench.colorTheme": "One Dark Pro",
     "background.enabled": true,

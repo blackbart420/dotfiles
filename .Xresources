@@ -2,8 +2,8 @@
 !       urxvt
 ! ===================
 URxvt*scrollBar:	    false
-! URxvt*letterSpace:  	-1
-URxvt.internalBorder: 15
+! URxvt*letterSpace:  -1
+URxvt.internalBorder: 30
 
 URxvt*font: 		      xft:Hack:regular:size=11
 URxvt*boldFont:		    xft:Hack:bold:size=11
@@ -117,7 +117,7 @@ Xft.hintstyle:		  hintslight
 #define P_chinese_red     #BE132D
 #define P_american_beauty #A73340
 #define P_deep_claret     #973443
-#define_P_chili_pepper    #9B1B30
+#define P_chili_pepper    #9B1B30
 
 
 #define P_copper         #C47E5A
