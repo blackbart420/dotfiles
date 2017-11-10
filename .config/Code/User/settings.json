@@ -19,6 +19,7 @@
     "workbench.colorTheme": "One Dark Pro",
     "background.enabled": true,
     "background.useDefault": false,
+
     "background.customImages": [
         "file:///home/nicolas/Images/Logos/ebiz-200.png",
         "file:///home/nicolas/Images/Logos/bluedrop-200.png",
