@@ -121,6 +121,7 @@ Xft.hintstyle:		  hintslight
 #define P_red_bud         #962D49
 #define P_persian_red     #A21441
 #define P_aurora_red      #B93A32
+#define P_malaga          #9F5069
 
 #define P_copper         #C47E5A
 #define P_copper_coin    #BA6B57
