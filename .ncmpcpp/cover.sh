@@ -29,7 +29,7 @@ function reset_background
            #scale down the cover to 30% of the original
            #place it 1% away from left and 50% away from top.
            #printf "\e]20;${COVER};30x30+1+50:op=keep-aspect\a"
-           printf "\e]20;${COVER};30x30+50+90:op=keep-aspect\a"
+           printf "\e]20;${COVER};50x50+65+40:op=keep-aspect\a"
         else
             reset_background
         fi
