@@ -112,6 +112,7 @@ Xft.hintstyle:		  hintslight
 !------- PANTONE misc
 !        https://www.pantone.com/pantone-color-institute-announces-custom-purple-for-prince-love-symbol-number-two
 #define P_love_symbol_2   #563B64
+#define P_red_clay        #C2452D
 #define P_chinese_red     #BE132D
 #define P_mars_red        #BC2731
 #define P_aurora_red      #B93A32
