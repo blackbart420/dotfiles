@@ -128,6 +128,7 @@ Xft.hintstyle:		  hintslight
 #define P_slate_rose      #B45865
 #define P_pompeian_red    #A4292E
 #define P_amaranth        #6F3C56
+#define P_rose_wine       #A4596D
 
 #define P_copper         #C47E5A
 #define P_copper_coin    #BA6B57
