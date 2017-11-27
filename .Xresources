@@ -132,6 +132,8 @@ Xft.hintstyle:		  hintslight
 #define P_garnet          #953640
 #define P_bordeaux        #96637B
 #define P_dry_rose        #8C4759
+#define P_valerian        #9F7A93
+#define P_thistle_down    #9499BB
 
 #define P_copper         #C47E5A
 #define P_copper_coin    #BA6B57
