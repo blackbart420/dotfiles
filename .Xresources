@@ -135,6 +135,7 @@ Xft.hintstyle:		  hintslight
 #define P_valerian        #9F7A93
 #define P_thistle_down    #9499BB
 #define P_aragon          #B06455
+#define P_lavender_violet #767BA5
 
 #define P_copper         #C47E5A
 #define P_copper_coin    #BA6B57
