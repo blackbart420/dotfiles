@@ -138,6 +138,7 @@ Xft.hintstyle:		  hintslight
 #define P_lavender_violet #767BA5
 #define P_saxony_blue     #1F6680
 #define P_bayou           #20706F
+#define P_adriatic_blue   #5C899B
 
 #define P_copper         #C47E5A
 #define P_copper_coin    #BA6B57
