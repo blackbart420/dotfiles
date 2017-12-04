@@ -140,6 +140,7 @@ Xft.hintstyle:		  hintslight
 #define P_bayou           #20706F
 #define P_adriatic_blue   #5C899B
 #define P_celestial       #006380
+#define P_canton          #6DA29E
 
 #define P_copper         #C47E5A
 #define P_copper_coin    #BA6B57
