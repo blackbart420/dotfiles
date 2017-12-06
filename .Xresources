@@ -142,6 +142,7 @@ Xft.hintstyle:		  hintslight
 #define P_celestial       #006380
 #define P_canton          #6DA29E
 #define P_riviera         #5879A2
+#define P_dusk_blue       #7BA0C0
 
 #define P_copper         #C47E5A
 #define P_copper_coin    #BA6B57
