@@ -29,6 +29,27 @@ Xft.hintstyle:		  hintslight
 !-------COLORS-------
 !--------------------
 
+!------- PANTONE color of the year 2018
+!        https://www.pantone.com/color-of-the-year-2018-tools-for-designers
+!------- Purple Haze
+#define P_ultra_violet    #5F4B8B
+#define P_ether           #9EB6B8
+#define P_weeping_willow  #B3B17B
+#define P_tradewinds      #7F8793
+#define P_misty_lilac     #BCB4C4
+#define P_deauville_mauve #AF9294
+#define P_dusty_lavender  #A1759C
+#define P_lavender_violet #767BA5
+
+!------- Kindred Spirits
+!------- Drama Queen
+!------- Intrigue
+!------- Quietude
+!------- Attitude
+!------- Desert Sunset
+!------- Floral Fantasies
+
+
 !------- PANTONE color of the year 2017
 !        https://www.pantone.com/color-of-the-year-2017
 !------- Transitions
