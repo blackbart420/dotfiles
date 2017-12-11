@@ -168,6 +168,7 @@ Xft.hintstyle:		  hintslight
 #define P_orient_blue     #47457A
 #define P_velvet_morning  #60688D
 #define P_porcelain_green #108780
+#define P_delft           #3D5E8C
 
 #define P_copper         #C47E5A
 #define P_copper_coin    #BA6B57
