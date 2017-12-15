@@ -172,6 +172,7 @@ Xft.hintstyle:		  hintslight
 #define P_lyons_blue       #005871
 #define P_galapagos_green  #29685F
 #define P_green_blue_slate #358082
+#define P_blue_heaven      #5B7E98
 
 #define P_copper         #C47E5A
 #define P_copper_coin    #BA6B57
