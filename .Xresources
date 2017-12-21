@@ -176,6 +176,7 @@ Xft.hintstyle:		  hintslight
 #define P_blue_sapphire    #09577B
 #define P_lagoon           #4D9E9A
 #define P_parisian_blue    #4F7CA4
+#define P_caribbean_sea    #00819D
 
 #define P_copper         #C47E5A
 #define P_copper_coin    #BA6B57
