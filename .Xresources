@@ -46,6 +46,8 @@ Xft.hintstyle:		  hintslight
 #define P_chili_pepper #9B1B30
 
 !------- Intrigue
+#define P_blue_moon #3686A0
+
 !------- Quietude
 #define P_frosted_almond #D2C2AC
 #define P_ruby_wine      #77333B
