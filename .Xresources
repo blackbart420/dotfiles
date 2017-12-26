@@ -58,6 +58,8 @@ Xft.hintstyle:		  hintslight
 #define P_spanish_villa  #DFBAA9
 
 !------- Attitude
+#define P_hawaiian_surf #0078A7
+
 !------- Desert Sunset
 #define P_sunset_gold #F7C46C
 #define P_emberglow   #EA6759
