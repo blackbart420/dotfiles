@@ -200,6 +200,7 @@ Xft.hintstyle:		  hintslight
 #define P_hunter_green     #335749
 #define P_larkspur         #3C7D90
 #define P_turkish_tile     #00698B
+#define P_viridian_green   #009499
 
 #define P_copper         #C47E5A
 #define P_copper_coin    #BA6B57
