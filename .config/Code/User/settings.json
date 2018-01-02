@@ -27,5 +27,6 @@
     ],
     "editor.minimap.enabled": true,
     "git.confirmSync": false,
-    "window.zoomLevel": 0
+    "window.zoomLevel": 0,
+    "git.enabled": false
 }
