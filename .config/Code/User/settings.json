@@ -28,5 +28,7 @@
     "editor.minimap.enabled": true,
     "git.confirmSync": false,
     "window.zoomLevel": 0,
-    "git.enabled": false
+    "git.enabled": false,
+    "php.executablePath": "/usr/bin/php",
+    "php.suggest.basic": false
 }
