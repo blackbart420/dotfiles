@@ -208,6 +208,7 @@ Xft.hintstyle:		  hintslight
 #define P_toasted_nut      #C08768
 #define P_cognac           #8B645A
 #define P_roan_rouge       #885157
+#define P_earth_red        #95424E
 
 #define P_copper         #C47E5A
 #define P_copper_coin    #BA6B57
