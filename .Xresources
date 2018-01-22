@@ -210,6 +210,8 @@ Xft.hintstyle:		  hintslight
 #define P_roan_rouge       #885157
 #define P_earth_red        #95424E
 #define P_cedar_wood       #A1655B
+#define P_lion             #A0714F
+
 
 #define P_copper         #C47E5A
 #define P_copper_coin    #BA6B57
