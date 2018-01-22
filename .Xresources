@@ -211,6 +211,8 @@ Xft.hintstyle:		  hintslight
 #define P_earth_red        #95424E
 #define P_cedar_wood       #A1655B
 #define P_lion             #A0714F
+#define P_blue_surf        #90A8A4
+
 
 
 #define P_copper         #C47E5A
