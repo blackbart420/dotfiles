@@ -213,6 +213,7 @@ Xft.hintstyle:		  hintslight
 #define P_lion              #A0714F
 #define P_blue_surf         #90A8A4
 #define P_purple_impression #858FB1
+#define P_lilas             #B88995
 
 
 
