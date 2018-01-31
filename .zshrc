@@ -85,3 +85,6 @@ eval `keychain -q --agents ssh --eval ~/.ssh/nicolas`
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# Set up Node Version Manager
+#source /usr/share/nvm/init-nvm.sh

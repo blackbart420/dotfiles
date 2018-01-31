@@ -215,6 +215,7 @@ Xft.hintstyle:		  hintslight
 #define P_purple_impression #858FB1
 #define P_lilas             #B88995
 #define P_lavender_frost    #BDABBE
+#define P_aquifer           #89ACAC
 
 
 #define P_copper         #C47E5A
