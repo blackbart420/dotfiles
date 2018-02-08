@@ -14,7 +14,8 @@
     },
     "files.associations": {
         "*.module": "php",
-        "*.inc": "php"
+        "*.inc": "php",
+        "*.theme": "php"
     },
     "workbench.colorTheme": "One Dark Pro",
     "background.enabled": true,
