@@ -29,212 +29,24 @@ Xft.hintstyle:		  hintslight
 !-------COLORS-------
 !--------------------
 
-!------- PANTONE color of the year 2018
-!        https://www.pantone.com/color-of-the-year-2018-tools-for-designers
-!------- Purple Haze
-#define P_ultra_violet    #5F4B8B
-#define P_ether           #9EB6B8
-#define P_weeping_willow  #B3B17B
-#define P_tradewinds      #7F8793
-#define P_misty_lilac     #BCB4C4
-#define P_deauville_mauve #AF9294
-#define P_dusty_lavender  #A1759C
-#define P_lavender_violet #767BA5
-
-!------- Kindred Spirits
-!------- Drama Queen
-#define P_chili_pepper #9B1B30
-
-!------- Intrigue
-#define P_blue_moon #3686A0
-
-!------- Quietude
-#define P_frosted_almond #D2C2AC
-#define P_ruby_wine      #77333B
-#define P_canyon_rose    #AF6C67
-#define P_burlwood       #9B716B
-#define P_cashmere_rose  #CE879F
-#define P_peach_beige    #D3A297
-#define P_spanish_villa  #DFBAA9
-
-!------- Attitude
-#define P_hawaiian_surf #0078A7
-
-!------- Desert Sunset
-#define P_sunset_gold #F7C46C
-#define P_emberglow   #EA6759
-#define P_hot_pink    #E55982
-#define P_poinciana   #CA3422
-#define P_muskmelon   #EC935E
-
-!------- Floral Fantasies
-#define P_lettuce_green #BED38E
-
-!------- PANTONE color of the year 2017
-!        https://www.pantone.com/color-of-the-year-2017
-!------- Transitions
-#define P_greenery   #88B04B
-#define P_treetop    #476A30
-
-!------- Ethereal Material
-#define P_periscope  #46444C
-#define P_dull_gold  #846D3D
-
-!------- Grand Canyon
-#define P_black_onyx #2B272B
-
-!------- Forest Floor
-!------- Rev It Up
-!------- Fathomless
-#define P_online_lime #44883C
-#define P_silver_blue #8A9A9A
-
-!------- Analogous
-!------- Moody Blooms
-!------- Deep Rooted
-#define P_sepia_tint #897560
-
-!------- Calm It Down
-
-
-!------- PANTONE Fashion Color Report, Spring 2018
-!        https://www.pantone.com/fashion-color-trend-report-new-york-spring-2018
-!        https://www.pantone.com/fashion-color-trend-report-london-spring-2018
-#define P_sailor_blue  #0E3A53
-#define P_harbor_mist  #AFB1B4
-#define P_warm_sand    #C5AE91
-#define P_coconut_milk #F0EDE5
-
-#define P_meadowlark      #EAD94E
-#define P_cherry_tomato   #EB3C27
-#define P_little_blue_boy #6EA2D5
-#define P_chili_oil       #8E3C36
-#define P_pink_lavender   #D9AFCA
-#define P_blooming_dahlia #EB9687
-#define P_arcadia         #00A28A
-#define P_ultra_violet    #5F4B8B
-#define P_emperador       #684832
-#define P_almost_mauve    #E7DCD9
-#define P_spring_crocus   #BA69A1
-#define P_lime_punch      #C0D725
-#define P_palace_blue     #346CB0
-#define P_ash_rose        #B5817D
-#define P_nile_green      #A7C796
-#define P_spiced_apple    #783937
-#define P_rapture_rose    #D16277
-
-
-!------- PANTONE Fashion Color Report, Fall 2017
-!        https://www.pantone.com/fashion-color-report-fall-2017
-!------- New York
-#define P_grenadine      #DF3F32
-#define P_tawny_port     #5C2C35
-#define P_ballet_slipper #EBCED5
-#define P_butterum       #C68F65
-#define P_navy_peony     #223A5E
+#define P_black_onyx     #2B272B
+#define P_periscope      #46444C
 #define P_neutral_gray   #8E918F
+#define P_harbor_mist    #AFB1B4
+#define P_coconut_milk   #F0EDE5
+#define P_warm_sand      #C5AE91
+#define P_dull_gold      #846D3D
+#define P_emperador      #684832
+#define P_meadowlark     #EAD94E
+#define P_cherry_tomato  #EB3C27
+#define P_grenadine      #DF3F32
+#define P_flame_scarlet  #CD212A
+#define P_mars_red       #BC2731
+#define P_love_symbol_2  #563B64
+#define P_pink_lavender  #D9AFCA
+#define P_sailor_blue    #0E3A53
 #define P_shaded_spruce  #00585E
-#define P_golden_lime    #9A9738
-#define P_marina         #4F84C4
-#define P_autumn_maple   #C46215
-
-!------- London
-#define P_flame_scarlet #CD212A
-#define P_primrose_pink #EED4D9
-#define P_toast         #CA9978
-#define P_blue_bell     #93B4D7
-#define P_royal_lilac   #774D8E
-#define P_otter         #7F674F
-#define P_copper_tan    #DE8E65
-#define P_lemon_curry   #CDA323
-#define P_golden_olive  #AF9841
-
-
-!------- PANTONE misc
-!        https://www.pantone.com/pantone-color-institute-announces-custom-purple-for-prince-love-symbol-number-two
-#define P_love_symbol_2     #563B64
-#define P_red_clay          #C2452D
-#define P_chinese_red       #BE132D
-#define P_mars_red          #BC2731
-#define P_aurora_red        #B93A32
-#define P_raspberry_wine    #B63753
-#define P_garnet_rose       #AC4B55
-#define P_american_beauty   #A73340
-#define P_persian_red       #A21441
-#define P_persian_violet    #8C8EB2
-#define P_malaga            #9F5069
-#define P_magenta_haze      #9D446E
-#define P_deep_claret       #973443
-#define P_red_bud           #962D49
-#define P_slate_rose        #B45865
-#define P_pompeian_red      #A4292E
-#define P_amaranth          #6F3C56
-#define P_rose_wine         #A4596D
-#define P_garnet            #953640
-#define P_bordeaux          #96637B
-#define P_dry_rose          #8C4759
-#define P_valerian          #9F7A93
-#define P_thistle_down      #9499BB
-#define P_aragon            #B06455
-#define P_lavender_violet   #767BA5
-#define P_saxony_blue       #1F6680
-#define P_bayou             #20706F
-#define P_adriatic_blue     #5C899B
-#define P_celestial         #006380
-#define P_canton            #6DA29E
-#define P_riviera           #5879A2
-#define P_dusk_blue         #7BA0C0
-#define P_cendre_blue       #3E7FA5
-#define P_orient_blue       #47457A
-#define P_velvet_morning    #60688D
-#define P_porcelain_green   #108780
-#define P_delft             #3D5E8C
-#define P_lyons_blue        #005871
-#define P_galapagos_green   #29685F
-#define P_green_blue_slate  #358082
-#define P_blue_heaven       #5B7E98
-#define P_blue_sapphire     #09577B
-#define P_lagoon            #4D9E9A
-#define P_parisian_blue     #4F7CA4
-#define P_caribbean_sea     #00819D
-#define P_evergreen         #11574A
-#define P_hunter_green      #335749
-#define P_larkspur          #3C7D90
-#define P_turkish_tile      #00698B
-#define P_viridian_green    #009499
-#define P_purple_haze       #807396
-#define P_sunburn           #B37256
-#define P_brittany_blue     #4C7E86
-#define P_baked_clay        #9C5642
-#define P_toasted_nut       #C08768
-#define P_cognac            #8B645A
-#define P_roan_rouge        #885157
-#define P_earth_red         #95424E
-#define P_cedar_wood        #A1655B
-#define P_lion              #A0714F
-#define P_blue_surf         #90A8A4
-#define P_purple_impression #858FB1
-#define P_lilas             #B88995
-#define P_lavender_frost    #BDABBE
-#define P_aquifer           #89ACAC
-#define P_crocus            #C67FAE
-
-
-#define P_copper         #C47E5A
-#define P_copper_coin    #BA6B57
-#define P_gold_fusion    #FFB000
-#define P_old_gold       #ECA825
-#define P_artisans_gold  #F2AB46
-#define P_antique_gold   #B59E5F
-#define P_bright_gold    #CF9F52
-#define P_harvest_gold   #B68A3A
-#define P_silver         #A2A2A1
-#define P_quicksilver    #7E7D88
-
-!------- Misc
-#define royal_font_brown #A97C50
-#define royal_font_taupe #C2B59B
-
+#define P_arcadia        #00A28A
 
 
 !------- Color Palette -------
@@ -269,11 +81,6 @@ Xft.hintstyle:		  hintslight
 *pointerColorBackground: #586e75
 *pointerColorForeground: #93a1a1
 
-
-
-        
-
- 
 
 
 *color0:                P_black_onyx
