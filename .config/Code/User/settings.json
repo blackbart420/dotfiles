@@ -31,5 +31,6 @@
     "window.zoomLevel": 0,
     "git.enabled": false,
     "php.executablePath": "/usr/bin/php",
-    "php.suggest.basic": false
+    "php.suggest.basic": false,
+    "workbench.statusBar.visible": true
 }
