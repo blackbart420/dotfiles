@@ -322,3 +322,6 @@ exec --no-startup-id slack
 
 # dropbox
 exec --no-startup-id dropbox start
+
+# network
+exec --no-startup-id nm-applet
