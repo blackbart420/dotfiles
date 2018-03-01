@@ -32,5 +32,6 @@
     "git.enabled": false,
     "php.executablePath": "/usr/bin/php",
     "php.suggest.basic": false,
-    "workbench.statusBar.visible": true
+    "workbench.statusBar.visible": true,
+    "editor.tabCompletion": true
 }
